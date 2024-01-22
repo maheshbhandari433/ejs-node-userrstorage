@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="/styles/basicStyles.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <main>
+        <h1><%= header %></h1>
+        <% if(result.length === 0) { %>
+        <h2>No person found !</h2> 
+    <% } else { %>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Department</th>
+                <th>Salary (€)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% result.forEach(person => { %>
+                <tr>
+                    <td><%= person.id %></td>
+                    <td><%= person.firstname %></td>
+                    <td><%= person.lastname %></td>
+                    <td><%= person.department %></td>
+                    <td><%= person.salary %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table> 
+<% } %>
+<a href = '/'><button>Menu</button></a>
+    </main>
+</body>
+</html>

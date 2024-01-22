@@ -1,0 +1,12 @@
+{
+    "port":3000,
+    "host":"localhost",
+    "storageEngine":{
+        "folder":"jsonStorageEngine",
+        "dataStorageFile":"dataStorageLayer.js"
+    },
+    "storage":{
+        "folder":"employeeRegister",
+        "storageConfigFile":"storageConfig.json"
+    }
+}
