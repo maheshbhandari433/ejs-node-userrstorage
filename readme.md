@@ -1,12 +1,10 @@
 ### EmployeeExpressEjsServer
 
- 1. ```shell
-npm init -y
-````
+#### Get started: 
 
-2. ```shell
-npm install express ejs
-````
+1. `npm init -y`
+
+2. `npm install express ejs`
 
 
 
